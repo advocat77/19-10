@@ -7,21 +7,34 @@
    display: flex;
    width: 33%;
    padding: 50px 0 64px 20px;
+   position: relative;
+   background-color: seashell;
 }
 
-.filter-text {
+.filter-title {
+   display: block;
    font-weight: 600;
    font-size: 14px;
    line-height: 17px;
    color: #000000;
    text-transform: uppercase;
    margin-right: 17px;
+   padding: 1em;
 }
 
-.filter-sort {
-   background-color: transparent;
-   border: none;
+.filter [open] {
+   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
+
+.filter [open].filter-title {
+   color: skyblue;
+}
+
+.filter-content {
+   position: absolute;
+   left: 0;
+}
+
 
 .sort-box {
    display: flex;
